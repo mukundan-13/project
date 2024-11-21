@@ -57,7 +57,7 @@ const UserBookings = () => {
           const token = localStorage.getItem('token');
           const userId = localStorage.getItem('userId');
 
-          const reviewsResponse = await axios.get(`http://localhost:8085/api/reviews/user/${userId}`, {
+          const reviewsResponse = await axios.get(`http://localhost:8080/api/reviews/user/${userId}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
